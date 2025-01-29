@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    background-color:#1b14141c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profilepicture{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+}
+.profilecard{
+    background-color: #121212;
+    color: #e0e0e0c7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    gap: 1.5vh;
+}
+.profile{
+    display: flex;
+    flex-direction:column;
+    gap: 2vh;
+    padding-left: 2vw;
+}
+.fullName{
+    font-size:2.5em;
+}
+.jobTitle{
+    color: #c7390e;
+    font-size: x-large;
+
+}
+.email{
+    color: #c7390e;
+    font-size: large;
+
+}
+.shortBio{
+    font-size: medium;
+    font-weight: 500;
+    margin-top: 5vh;
+    line-height: 3vh;
+}
+.socials{
+    display: flex;
+    gap: 2vw;
+    margin-top: 10vh;
+}
+
+@media(width <= 500px){
+    body{
+        height: auto;
+    }
+    .profilecard{
+        border-radius: 0px;
+        flex-direction: column-reverse;
+        width: 100vw;
+        padding: 1vh;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       
+    }
+    .profile{
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 1vh;
+    }
+    .profilepicture{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius:10px;
+    }
+    .fullName{
+        font-size:1.7em;
+    }
+    .jobTitle{
+        font-size:large;
+    
+    }
+    .email{
+        font-size: medium;
+    
+    }
+    .shortBio{
+        padding-block: 3vh;
+        letter-spacing: 1px;
+        line-height: 4vh;
+    }
+    .socials{
+        gap: 4vw;
+    }
+}
